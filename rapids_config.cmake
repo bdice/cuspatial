@@ -26,6 +26,8 @@ else()
   )
 endif()
 
+set(rapids-cmake-repo bdice/rapids-cmake)
+set(rapids-cmake-branch remove-cccl-patch-pr-211)
 if(NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/CUSPATIAL_RAPIDS-${RAPIDS_VERSION_MAJOR_MINOR}.cmake")
   file(
     DOWNLOAD
